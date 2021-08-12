@@ -1,0 +1,58 @@
+@media (max-width: 800px) {
+    .nav {
+        justify-content: space-between;
+        padding: 5px 0px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .history-section {
+        top: 10px;
+    }
+
+    .history-section p {
+        font: 1.8vw lato;
+    }
+
+    .dot-box > div {
+        width: 6px;
+        height: 6px;
+    }
+
+    .climb-section p {
+        font: .7rem lato;
+    }
+
+    .climb-tab {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .climb-tab > button:first-child {
+        margin-left: 0vw;
+    }
+
+    .schedule-container {
+        top: 34vw;
+    }
+
+    .logo-coat {
+        width: 100%;
+        height: 74px;
+    }
+
+    .footer-logo-title-top {
+        font: 1.4rem bebas neue;
+        line-height: .6;
+    }
+
+    .footer-logo-title-bottom {
+        font: 1.53rem bebas neue;
+    }
+
+    .copyright {
+        font: .7rem lato;
+    }
+}

@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,700&family=Oswald:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+}
+
+/* ============ TOP NAVIGATION BAR ========= */
+
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-links a {
+    margin: 0 1.5vw;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid;
+    font: 15px lato;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 3px;
+}
+
+.logo {
+    width: 40px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+}
+
+/* =========== NAVIGATION BAR STICKY FIXED ========= */
+
+.nav2 {
+    position: fixed;
+    width: 100%;
+    top: -130px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 4;
+    background-color: #fff;
+    padding: 13px 0;
+    transition: .6s ease-in-out
+}
+
+.nav-links2 a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(56, 69, 97);
+    border-bottom: 1px solid #000;
+    font: 1rem lato;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+.nav div, .nav2 div, .nav2 div a {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div a {
+    padding-bottom: 5px;
+}
+
+.logo-title-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+}
+
+.logo-title-top, .logo-title-bottom {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.logo-title-top {
+    color: #444;
+    font: 1.8rem bebas neue;
+    line-height: .6;
+}
+.logo-title-bottom {
+    font: 2rem bebas neue;
+    background-image: linear-gradient(rgb(67, 78, 106), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+/* ======== LOS ANGELES MAIN TITLE ======= */
+
+header {
+    margin-bottom: -10px;
+}
+
+.main-title-div {
+    position: absolute;
+    top: 9vw;
+    left: 30vw;
+    z-index: 2;
+}
+
+.title-top, .title-bottom {
+    font: 7vw bebas neue;
+    margin: 0;
+    text-align: center;
+    letter-spacing: .4vw;
+}
+
+.title-top {
+    color: #444;
+    line-height: .3;
+}
+
+.title-bottom {
+    background-image: linear-gradient(rgb(67, 78, 106), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 7.75vw;
+}
+
+.top-image {
+    width: 100%;
+    filter: saturate(80%);
+    margin: 0;
+}
+
+/* ========== HISTORY SECTION ========== */
+
+#history {
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.history-section {
+    position: absolute;
+    z-index: 2;
+    left: 19vw;
+    top: 30px;
+}
+
+.history-title-container {
+    display: flex;
+}
+
+.history-01 {
+    font: 10vw oswald;
+    color: rgba(90, 107, 138, .6);
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+}
+
+.history-h {
+    color: rgb(61, 75, 107);
+    font: 2.4vw oswald;
+    font-weight: 500;
+    margin: 0;
+}
+
+.history-title-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 3px;
+}
+
+.history-period {
+    background-color: rgba(90, 107, 138, .6);
+    width: 1.45vw;
+    height: 1.45vw;
+    margin: 0 0 .53vw 0;
+}
+
+.history-section p {
+    margin: 0 0 0 5vw;
+    width: 70%;
+    font: 1rem lato;
+    color: #0008;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(56, 69, 97, .5);
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    z-index: 2;
+    align-items: center;
+    border-top: 1px solid #fff4;
+    padding: 20px 0;
+}
+
+.image-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.image-box > img {
+    width: 17%;
+    margin: 0 1vw;
+    cursor: pointer;
+}
+
+.dot-box {
+    display: flex;
+}
+
+.dot-box :nth-child(1) {
+    background: #fff
+}
+
+.dot-box > div {
+    width: 9px;
+    height: 9px;
+    background: #fff4;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.middle-image {
+    filter: saturate(150%);
+    margin: 0;
+    width: 100%;
+}
+
+/* ============== CLIMB SECTION ========== */
+
+#climb {
+    margin-bottom: -10px;
+    position: relative;
+}
+
+.climb-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 50vw
+}
+
+.climb-title-container {
+    display: flex;
+}
+
+.climb-02 {
+    font: 10vw oswald;
+    color: rgba(90, 107, 138, .6);
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+}
+
+.climb-c {
+    color: rgb(61, 75, 107);
+    font: 2.4vw oswald;
+    font-weight: 500;
+    margin: 0;
+}
+
+.climb-title-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.climb-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.climb-period {
+    background-color: rgba(90, 107, 138, .6);
+    width: 1.45vw;
+    height: 1.45vw;
+    margin: 0 0 .53vw 0;
+}
+
+.climb-section p {
+    margin: 0 0 0 5vw;
+    min-width: 40vw;
+    font: 1rem lato;
+    color: #0008;
+}
+
+.climb-tab {
+    width: 100%;
+    background: rgb(56, 69, 97);
+    display: flex;
+}
+
+.climb-tab button {
+    color: rgb(142, 152, 170);
+    font: 1.1rem oswald;
+    font-weight: 500;
+    padding: 1vw 2vw;
+    border: none;
+    background: none;
+    transition: .3s;
+    cursor: pointer;
+    text-underline-offset: 3px;
+}
+
+.climb-tab > button:first-child {
+    margin-left: 15vw;
+}
+
+.climb-tab button:focus {
+    background: rgb(138, 151, 175);
+    color: rgb(56, 69, 97);
+    text-decoration: underline;
+}
+
+.bottom-image {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+/* ================ SCHEDULE ============ */
+
+.schedule-container {
+    display: flex;
+    position: absolute;
+    background: #fff9;
+    flex-direction: column;
+    padding: 2vw 5vw;
+    left: 18vw;
+    top: 25vw;
+}
+
+.schedule-title {
+    font: 2rem oswald;
+    font-weight: 500;
+    margin: 0 0 0em 0;
+    color:rgb(56, 69, 97)
+}
+
+.schedule-details {
+    display: flex;
+}
+
+.schedule-dates {
+    margin-right: 40px;
+    font: 1rem lato;
+    color: #0009;
+}
+
+.schedule-dates > :nth-child(1) {
+    margin-bottom: 8px;
+} 
+
+.schedule-dates > :nth-child(2), .schedule-dates > :nth-child(3) {
+    margin: 0 0 35px 0;
+}
+
+.schedule-description {
+    font: 1rem lato;
+    color: #0009;
+}
+
+.schedule-description > :nth-child(1) {
+    margin-bottom: 8px;
+} 
+
+.schedule-description > :nth-child(2), .schedule-description > :nth-child(3) {
+    margin: 0 0 35px 0;
+}
+
+
+/* ============== FOOTER ============ */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 10px 0;
+    background: rgb(56, 69, 97);
+    align-items: center;
+}
+
+.logo-coat {
+    width: 100%;
+    height: 86px;
+    background: rgba(56, 69, 97, 0.808);;
+    position: absolute;
+    /* left: 14%; */
+}
+
+.footer-logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo-title-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+}
+
+.footer-logo-title-top, .footer-logo-title-bottom {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.footer-logo-title-top {
+    color: #fff;
+    font: 1.8rem bebas neue;
+    line-height: .6;
+}
+.footer-logo-title-bottom {
+    font: 2rem bebas neue;
+    color: #fff;
+}
+
+.copyright {
+    font: 1rem lato;
+    color: #fff;
+}
